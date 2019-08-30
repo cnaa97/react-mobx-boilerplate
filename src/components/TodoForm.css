@@ -1,0 +1,13 @@
+.TodoForm {
+  display: inline-block;
+}
+
+.TodoForm input {
+  border: 1px solid #eee;
+}
+
+.TodoForm button {
+  background: #eee;
+  color: #000;
+  border: 0;
+}
