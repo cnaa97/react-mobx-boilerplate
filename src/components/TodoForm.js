@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { inject, observer } from 'mobx-react';
+import { inject } from 'mobx-react';
 import './TodoForm.css'
 
 @inject(({store}) => ({
@@ -32,7 +32,7 @@ class TodoForm extends Component {
     const { title } = this.state;
     return (
       <div className="TodoForm">
-        <input type="text" value={this.state.title} onChange={this._handleInput} />
+        <input type="text" value={title} onChange={this._handleInput} />
         <button onClick={this._handleAdd}>ADD</button>
       </div>
     );
